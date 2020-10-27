@@ -60,6 +60,11 @@ def create(name, controls, parent_control, collision_geometry, geometry_parent=N
     scale_constraint = pm.scaleConstraint(parent_control, muscles_group, mo=False)
     created.append(scale_constraint)
     created.append(muscles_group)
+    
+    # makes collision geometry a muscle
+    for geometry in collision_geometry:
+        pm.select(geometry)
+        pm.mel.eval('cMuscle_makeMuscle(0);')
 
     # iterate over all the controls and make collisions for each
     for control in controls:
@@ -143,7 +148,7 @@ def create(name, controls, parent_control, collision_geometry, geometry_parent=N
 
         else:
             # if not creating a blender, drive the controls with a good ol' parent constraint
-            parent_constraint = pm.parentConstraint(control, locator)
+            parent_constraint = pm.parentConstraint(locator, control)
             created.append(parent_constraint)
 
     if is_geometry_driven:
