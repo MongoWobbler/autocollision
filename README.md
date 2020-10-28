@@ -1,8 +1,11 @@
 # Autocollision
 Script to create collisions in Maya. Uses Maya muscles. Useful for rigs! Written in Python with PySide2 and PyMel.  
-Based on Riham Toulan's script. http://www.rihamtoulan.com/blog/2018/3/24/faking-collisions-with-joints-based-setup-8snd2
+Based on Riham Toulan's script.  
+http://www.rihamtoulan.com/blog/2018/3/24/faking-collisions-with-joints-based-setup-8snd2  
 
-![Autocollider GUI](https://i.imgur.com/IGgoqUv.png)
+[Watch a video](https://youtu.be/0A-XC7OuBjA) on how launch and use the autocollision module or read below.
+
+[![Autocollider](https://i.imgur.com/IGgoqUv.png)](https://youtu.be/0A-XC7OuBjA "Autocollision GUI")
 
 To use:
 1. Place autocollision directory in one of Maya's python script directories.
