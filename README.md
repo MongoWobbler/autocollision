@@ -21,5 +21,3 @@ autocollision.mayadcc.show()
 7. Press "Create Collisions".
 
 Move geometry around and watch the controls collide with the geometry!
-
-Video explanation coming soon.
